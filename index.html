@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Bootstrap</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-danger-subtle">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Food</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Order</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Our Cafes
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Chernivtsi</a></li>
+                                <li><a class="dropdown-item" href="#">Lviv</a></li>
+                                <li><a class="dropdown-item" href="#">Kharkiv</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-dark" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="carousel" class="carousel carousel-light slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1000">
+                <img src="./img/fastfood.jpeg" class="d-block w-1000" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Fastfood</h3>
+                    <p>Burgers, fries, and all your favorite comfort foods. Fast, fresh, and satisfying.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./img/meat.jpeg" class="d-block w-1000" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Meat</h3>
+                    <p>Juicy, tender, and packed with flavor. Choose from our mouth-watering selection.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/vegetable.jpg" class="d-block w-1000" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Vegetables</h3>
+                    <p>Packed with nutrients, our veggie options are the perfect choice for a light, delicious meal.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="row justify-content-center g-4 my-md-5">
+        <div class="col-md-3">
+            <div class="card bg-danger-subtle mx-auto" style="width: 16rem;">
+                <img src="./img/cafe.jpg" class="card-img-top" alt="cafe">
+                <div class="card-body">
+                    <h5 class="card-title">In a cafe</h5>
+                    <p class="card-text">Grab your favorites, wherever you go.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card bg-danger-subtle mx-auto" style="width: 16rem;">
+                <img src="./img/vynos.jpg" class="card-img-top" alt="vynis">
+                <div class="card-body">
+                    <h5 class="card-title">For takeout</h5>
+                    <p class="card-text">Grab your favorites, wherever you go.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card bg-danger-subtle mx-auto" style="width: 16rem;">
+                <img src="./img/dostavka.jpg" class="card-img-top" alt="dostavka">
+                <div class="card-body">
+                    <h5 class="card-title">Home delivery</h5>
+                    <p class="card-text">Your favorite meals, now just a knock away.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow-lg border-0 rounded-4 bg-danger-subtle">
+                    <div class="card-body p-4">
+                        <h2 class="text-center mb-4">Food Order Form</h2>
+
+                        <form class="row g-3">
+                            <div class="col-md-6">
+                                <label for="inputEmail4" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="you@example.com">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputPassword4" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="********">
+                            </div>
+
+                            <div class="col-12">
+                                <label for="inputAddress" class="form-label">Delivery Address</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputAddress2" class="form-label">Additional info</label>
+                                <input type="text" class="form-control" id="inputAddress2"
+                                    placeholder="Apartment, floor...">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="inputCity" class="form-label">City</label>
+                                <input type="text" class="form-control" id="inputCity" placeholder="Chernivtsi">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="inputState" class="form-label">Food type</label>
+                                <select id="inputState" class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option>Fastfood</option>
+                                    <option>Meat</option>
+                                    <option>Vegetables</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <label for="inputZip" class="form-label">Zip</label>
+                                <input type="text" class="form-control" id="inputZip" placeholder="58000">
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        Save my order details
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-danger px-4">Order Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="py-4 my-1 bg-danger-subtle">
+        <ul class="nav justify-content-center border-bottom pb-4 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2025 Food</p>
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
+
+</html>
